@@ -15,7 +15,7 @@ export const AddPostPage = () => {
   const [title, setTitle] = useState('')
   const [text, setText] = useState('')
   const [category, setCategory] = useState('')
-  const [image, setImage] = useState('');
+  const [image, setImage] = useState('')
   const [error, setError] = useState(false);
 
   const dispatch = useDispatch()
