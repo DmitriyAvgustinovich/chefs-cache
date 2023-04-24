@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+
+.form-edit {
+    background-color: #fffffff3;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.form-edit__wrapper {
+    background-color: #505050;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 20px;
+}
+
+.button-back__wrapper {
+    padding: 20px;
+}
+
+.button-back__btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #232323;
+}
+
+.button-back__item {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #fff;
+}
+
+.form-edit__pin-img {
+    margin: 0px 20px 20px 20px;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: #00AAFF;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.form-edit__img-item {
+    width: 100%;
+    max-height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-edit-text__wrapper {
+    margin: 20px;
+}
+
+.form-edit__category {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #fff;
+}
+
+.form-edit__input-filter {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: #454546;
+    padding: 20px;
+    border: 0;
+    outline: none;
+}
+
+.form-edit__category input {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: #454546;
+    padding: 20px;
+    border: 0;
+    outline: none;
+}
+
+.form-edit__category-help {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.form-edit__category-help span {
+    background-color: #fff;
+    color: #FF4053;
+    font-size: 24px;
+    border-radius: 50%;
+}
+
+.form-edit__category-help__list {
+    margin: 10px 20px 20px 10px;
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 500px;
+}
+
+.form-edit__category-help__list-item {
+    list-style-type: none;
+    padding: 0;
+    display: block;
+    margin: 10px 0px 0px 15px;
+}
+
+.form-edit__category-help__list-item li::before {
+    content: "•";
+    color: #FF4053;
+    margin-right: 0.5em;
+    font-size: 20px;
+}
+
+.form-edit__title {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #fff;
+}
+
+.form-edit__title input {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: #454546;
+    padding: 20px;
+    border: 0;
+    outline: none;
+}
+
+.form-edit__text {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #fff;
+}
+
+.form-edit__text textarea {
+    margin-top: 10px;
+    width: 100%;
+    border-radius: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 16px;
+    color: #454546;
+    padding: 20px 20px 100px 20px;
+    border: 0;
+    outline: none;
+}
+
+.edit-cancel-btns__wrapper {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.edit-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    background-color: #00AAFF;
+}
+
+.edit-cancel {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    background-color: #FF4053;
+}
+
+@media screen and (max-width: 510px) {
+
+    .edit-btn,
+    .edit-cancel {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+}

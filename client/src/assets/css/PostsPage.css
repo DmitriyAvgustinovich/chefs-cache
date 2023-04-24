@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+
+.posts-page {
+    background-color: #fffffff3;
+    min-height: 100vh;
+
+}
+
+.posts-page__wrapper {
+    max-width: 1100px;
+    margin: 0px auto;
+    padding: 40px 20px 40px 20px;
+}
+
+.posts-page-title {
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #232323;
+}
+
+.search-title-posts {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #232323;
+}
+
+.input-search__wrapper-posts {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.input-search__icon-posts {
+    background-color: #D9D9D9;
+    border-radius: 10px 0px 0px 10px;
+    padding: 19.5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #232323;
+}
+
+.input-search__item-posts {
+    background-color: #D9D9D9;
+    border-radius: 0px 10px 10px 0px;
+    padding: 15px 15px 15px 0px;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #232323;
+    outline: none;
+    border: none;
+}
+
+.input-search__item-posts::placeholder {
+    color: #232323;
+}
+
+.filter-title-posts {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #232323;
+    margin: 20px 0;
+}
+
+.input-filter__wrapper-posts {
+    display: flex;
+    align-items: center;
+}
+
+.input-filter__icon-posts {
+    background-color: #D9D9D9;
+    border-radius: 12px 0px 0px 12px;
+    padding: 19.5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #232323;
+}
+
+.input-filter__item-posts {
+    background-color: #D9D9D9;
+    padding: 15px 15px 15px 0px;
+    border-radius: 0px 12px 12px 0px;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #232323;
+    outline: none;
+    border: none;
+}
+
+.input-filter__item-posts::placeholder {
+    color: #232323;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+select option {
+    background-color: #D9D9D9;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #232323;
+}
+
+.error-search-posts {
+    text-align: center;
+    margin-top: 40px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #232323;
+}

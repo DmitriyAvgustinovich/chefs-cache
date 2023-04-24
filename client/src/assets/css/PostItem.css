@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+
+.posts-list__wrapper {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    background-color: #505050;
+}
+
+.posts-list__img {
+    width: 100%;
+    max-height: 550px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.posts-lists__text-wrapper {
+    padding: 20px;
+}
+
+.posts-list__username-wrapper {
+    max-width: 400px;
+}
+
+.posts-list__username-item {
+    display: inline-block;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.posts-list__date {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.posts-list__category {
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #ffffff;
+}
+
+.posts-list__title {
+    display: inline-block;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #232323;
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.posts-list__description {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #232323;
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 12px;
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.posts-views__wrapper {
+    margin-top: 40px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #232323;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.posts-views__item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #232323;
+}

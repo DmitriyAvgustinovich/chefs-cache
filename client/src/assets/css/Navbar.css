@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
+
+.navbar {
+    min-width: 100%;
+    background-color: #232323;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.navbar__wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.navbar__menu-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 80%;
+    max-width: 350px;
+    background: url('../img/back2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translateX(-100%);
+    background-position: -15px 0;
+    transition: transform 0.3s ease-out;
+}
+
+.navbar__wrapper.open .navbar__menu-wrapper {
+    transform: translateX(0);
+}
+
+.navbar__menu-wrapper::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.3s ease-out;
+}
+
+.navbar__wrapper.open .navbar__menu-wrapper::before {
+    opacity: 1;
+}
+
+.navbar__menu-link-close {
+    display: inline-block;
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    padding: 20px;
+    margin: 20px 20px 10px 20px;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+}
+
+.navbar__menu-user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #fff;
+    margin: 0 20px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.navbar__menu-user-info span {
+    border-bottom: 3px #F2C64D solid;
+}
+
+.navbar__menu-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #232323;
+    margin: 20px;
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.navbar__menu-link-logout-icon {
+    transform: rotate(90deg)
+}
+
+.navbar__menu-logo {
+    color: #fff;
+    font-family: 'Damion', cursive;
+    font-size: 40px;
+}
+
+.adaptMenu__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.adaptMenu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 20px;
+    border-radius: 12px;
+    background-color: #505050;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    color: #fff;
+}
