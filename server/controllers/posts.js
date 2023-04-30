@@ -12,7 +12,7 @@ export const createPost = async (req, res) => {
         if (req.files) {
             let fileName = Date.now().toString() + req.files.image.name
             const __dirname = dirname(fileURLToPath(import.meta.url))
-            req.files.image.mv(path.join(__dirname, '..', 'https://chefs-cache.onrender.com/api', 'uploads', fileName))
+            req.files.image.mv(path.join(__dirname, '..', `${process.env.REACT_APP_API_ORIGIN}/api`, 'uploads', fileName))
 
             const newPostWithImage = new Post({
                 username: user.username,
