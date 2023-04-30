@@ -27,16 +27,16 @@ export const MainPage = () => {
     dispatch(getAllPosts());
   }, [dispatch]);
 
+  if (!isAuth) {
+    return <LoginPage />;
+  }
+
   if (!posts.length) {
     return (
       <div className='empty-posts-message'>
         Постов не существует.
       </div>
     );
-  }
-
-  if (!isAuth) {
-    return <LoginPage />;
   }
 
   return (
