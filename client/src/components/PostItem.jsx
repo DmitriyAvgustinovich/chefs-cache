@@ -28,7 +28,7 @@ export const PostItem = ({ post }) => {
                     >
                         {post.imgUrl && (
                             <img
-                                src={`http://localhost:3002/${post.imgUrl}`}
+                                src={`${process.env.REACT_APP_API_ORIGIN}/api/${post.imgUrl}`}
                                 alt='img'
                                 className='posts-list__img'
                             />

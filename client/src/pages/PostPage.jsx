@@ -78,7 +78,7 @@ export const PostPage = () => {
           >
             {post.imgUrl && (
               <img
-                src={`${process.env.REACT_APP_API_ORIGIN}/api/${post.imgUrl}`}
+                src={`http://localhost:3002/${post.imgUrl}`}
                 alt='img'
                 className='post-page__img'
               />
