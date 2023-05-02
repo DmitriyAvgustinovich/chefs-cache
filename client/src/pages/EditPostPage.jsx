@@ -92,7 +92,7 @@ export const EditPostPage = () => {
         </label>
 
         {oldImage && (
-          <img className='form-edit__img-item' src={`http://localhost:3002/${oldImage}`} alt={oldImage.name} />
+          <img className='form-edit__img-item' src={`${process.env.REACT_APP_API_ORIGIN}/${oldImage}`} alt={oldImage.name} />
         )}
 
         {newImage && (
