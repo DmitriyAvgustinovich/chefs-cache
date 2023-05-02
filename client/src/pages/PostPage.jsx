@@ -78,7 +78,7 @@ export const PostPage = () => {
           >
             {post.imgUrl && (
               <img
-                src={`https://chefs-cache.onrender.com/api/${post.imgUrl}`}
+                src={`${process.env.REACT_APP_API_ORIGIN}/api/${post.imgUrl}`}
                 alt='img'
                 className='post-page__img'
               />
