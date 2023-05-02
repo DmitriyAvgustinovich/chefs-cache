@@ -34,7 +34,7 @@ export const MainPage = () => {
   if (!posts.length) {
     return (
       <div className='empty-eats-message'>
-        Блюд не существует.
+        Загрузка..
       </div>
     );
   }
