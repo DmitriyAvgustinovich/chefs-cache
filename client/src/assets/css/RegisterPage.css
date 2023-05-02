@@ -65,6 +65,15 @@
     color: #fff;
 }
 
+.register-loading-message {
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 25px;
+}
+
 @media screen and (max-width: 380px) {
     .form__buttons-item {
         text-align: center;

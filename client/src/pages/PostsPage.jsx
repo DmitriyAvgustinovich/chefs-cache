@@ -83,7 +83,7 @@ export const PostsPage = () => {
           ))
         ) : (
           <p className='error-search-posts'>
-            Блюда не существует.
+            Загрузка..
           </p>
         )}
 

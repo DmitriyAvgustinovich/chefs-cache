@@ -33,8 +33,8 @@ export const MainPage = () => {
 
   if (!posts.length) {
     return (
-      <div className='empty-posts-message'>
-        Постов не существует.
+      <div className='empty-eats-message'>
+        Блюд не существует.
       </div>
     );
   }
