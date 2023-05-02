@@ -10,6 +10,7 @@ export const PostItem = ({ post }) => {
     const [showAll] = useState(false);
 
     if (!post) {
+        console.log('sdffsad')
         return (
             <div className='loading-post-item-message'>
                 Загрузка..

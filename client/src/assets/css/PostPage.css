@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap');
 
+.loading-post-page-message {
+    margin-top: 40px;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 900;
+    color: #232323;
+    text-align: center;
+}
+
 .post-page {
     margin: 0px 20px;
 }
