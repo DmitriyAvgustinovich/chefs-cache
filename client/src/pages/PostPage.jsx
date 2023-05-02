@@ -78,7 +78,7 @@ export const PostPage = () => {
           >
             {post.imgUrl && (
               <img
-                src={`http://localhost:3002/${post.imgUrl}`}
+                src={`https://chefs-cache.onrender.com/api/${post.imgUrl}`}
                 alt='img'
                 className='post-page__img'
               />
