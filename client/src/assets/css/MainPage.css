@@ -9,6 +9,9 @@
     color: #232323;
     text-align: center;
 }
+.highlighted {
+    color: red;
+}
 
 .main {
     background-color: #fffffff3;

@@ -49,7 +49,7 @@ export const PostsPage = () => {
 
           <input
             type='text'
-            placeholder='Введите название блюда..'
+            placeholder='Введите ингридиент..'
             value={searchQuery}
             onChange={e => setSearchQuery(e.target.value)}
             className='input-search__item-posts' />

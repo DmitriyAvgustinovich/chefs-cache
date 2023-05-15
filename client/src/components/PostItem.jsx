@@ -55,7 +55,7 @@ export const PostItem = ({ post }) => {
                                 overflow: "hidden",
                                 textOverflow: "ellipsis",
                                 display: "-webkit-box",
-                                "WebkitLineClamp": showAll ? "unset" : "5",
+                                "WebkitLineClamp": showAll ? "unset" : "18",
                                 "WebkitBoxOrient": "vertical",
                             }}>
                                 {post.text}

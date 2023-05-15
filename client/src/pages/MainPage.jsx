@@ -18,7 +18,7 @@ export const MainPage = () => {
   const categories = ['Завтрак', 'Обед', 'Ужин', 'Выпечка', 'Салат', 'Десерт'];
 
   const filteredPosts = posts
-    .filter((post) => post.title.toLowerCase().includes(searchQuery.toLowerCase()))
+    .filter((post) => post.text.toLowerCase().includes(searchQuery.toLowerCase()))
     .filter((post) =>
       !selectedCategory || post.category.toLowerCase() === selectedCategory.toLowerCase()
     );
@@ -62,7 +62,7 @@ export const MainPage = () => {
             type='text'
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            placeholder='Введите название блюда..'
+            placeholder='Введите ингридиент..'
             className='input-search__item'
           />
         </div>
