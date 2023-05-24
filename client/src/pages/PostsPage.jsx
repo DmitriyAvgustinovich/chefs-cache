@@ -6,15 +6,16 @@ import { AiOutlineSearch, AiOutlineFilter } from 'react-icons/ai'
 
 export const PostsPage = () => {
   const [posts, setPosts] = useState([]);
+  const [error, setError] = useState(null);
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState('');
   const categories = ['Завтрак', 'Обед', 'Ужин', 'Выпечка', 'Салат', 'Десерт'];
 
   const filteredPosts = posts
-    .filter((post) => post.title.toLowerCase().includes(searchQuery.toLowerCase()))
+    .filter((post) => post && post.title && post.title.toLowerCase().includes(searchQuery.toLowerCase()))
     .filter((post) =>
-      !selectedCategory || post.category.toLowerCase() === selectedCategory.toLowerCase()
+      !selectedCategory || (post && post.category && post.category.toLowerCase() === selectedCategory.toLowerCase())
     );
 
   const fetchMyPosts = async () => {
@@ -22,7 +23,7 @@ export const PostsPage = () => {
       const { data } = await axios.get('/posts/user/me');
       setPosts(data);
     } catch (error) {
-      console.log(error);
+      setError(error.message);
     }
   };
 
@@ -77,7 +78,9 @@ export const PostsPage = () => {
           </select>
         </div>
 
-        {filteredPosts.length > 0 ? (
+        {error ? (
+          <p className='error-message'>Ошибка: {error}</p>
+        ) : filteredPosts.length > 0 ? (
           filteredPosts.map((post, idx) => (
             <PostItem post={post} key={idx} categories={categories} />
           ))
